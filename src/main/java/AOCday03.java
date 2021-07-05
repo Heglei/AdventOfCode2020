@@ -25,7 +25,7 @@ public class AOCday03 {
         Scanner scanner;
         List<String> lines = new ArrayList<>();
         try {
-            scanner = new Scanner(new File("C:\\\\AOC2020\\\\Day3.txt"));
+            scanner = new Scanner(new File("C:\\AOC2020\\Day3.txt"));
             while (scanner.hasNextLine()) {
                 lines.add(scanner.nextLine());
             }
