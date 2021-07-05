@@ -13,13 +13,17 @@ public class AocDay03 {
         int slope = 0;
         for (int i = 1; i < lines.size(); i++) {
             slope += 3;
-            if (true)
-                if (lines.get(i).charAt(slope) == '#') {
-                    trees++;
-                }
-            System.out.println(trees);
+            if (slope > 31) {
+                slope = slope - 31;
+            }
+
+            if (lines.get(i).charAt(slope) == '#') {
+                trees++;
+            }
         }
+        System.out.println(trees);
     }
+
 
     private static List<String> input() {
         Scanner scanner;
