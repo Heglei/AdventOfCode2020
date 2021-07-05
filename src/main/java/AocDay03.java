@@ -10,18 +10,42 @@ public class AocDay03 {
 
         List<String> lines = input();
         int trees = 0;
-        int slope = 0;
+        int position = 0;
         for (int i = 1; i < lines.size(); i++) {
-            slope += 3;
-            if (slope > 30) {
-                slope = slope - 31;
+            position += 3;
+            if (position > lines.get(i).length() - 1) {
+                position = position - lines.get(i).length();
             }
 
-            if (lines.get(i).charAt(slope) == '#') {
+            if (lines.get(i).charAt(position) == '#') {
                 trees++;
             }
         }
         System.out.println(trees);
+
+        int trees2 = trees * slopes(lines, 1, 1);
+        trees2 = trees2 * slopes(lines, 5, 1);
+        trees2 = trees2 * slopes(lines, 7, 1);
+        trees2 = trees2 * slopes(lines, 1, 2);
+        System.out.println(trees2);
+    }
+
+    private static int slopes(List<String> lines, int right, int down) {
+
+        int trees = 0;
+        int position = 0;
+        for (int i = down; i < lines.size(); i += down) {
+            position += right;
+            if (position > 30) {
+                position = position - 31;
+            }
+
+            if (lines.get(i).charAt(position) == '#') {
+                trees++;
+            }
+        }
+        System.out.println(trees);
+        return trees;
     }
 
 
