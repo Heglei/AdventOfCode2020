@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 
-public class AOCday03 {
+public class AocDay03 {
 
     public static void main(String[] args) {
 

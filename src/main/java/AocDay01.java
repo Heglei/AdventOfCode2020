@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class AOCday01 {
+public class AocDay01 {
     public static void main(String[] args) {
         int[] input = new int[]{1713, 1281, 1185, 1501, 1462, 1752, 1363, 1799, 1071, 1446, 1685, 1706, 1726, 1567,
                 1867, 1376, 1445, 1971, 1749, 438, 1291, 1261, 1585, 1835, 1630, 1975, 1467, 1829, 1669, 1638, 1961,

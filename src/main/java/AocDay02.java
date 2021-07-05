@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 
-public class AOCday02 {
+public class AocDay02 {
 //    public static void main(String[] args) {
 //        Scanner scanner;
 //        int valid = 0;
