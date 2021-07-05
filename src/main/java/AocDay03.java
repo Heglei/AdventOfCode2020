@@ -13,7 +13,7 @@ public class AocDay03 {
         int slope = 0;
         for (int i = 1; i < lines.size(); i++) {
             slope += 3;
-            if (slope > 31) {
+            if (slope > 30) {
                 slope = slope - 31;
             }
 
