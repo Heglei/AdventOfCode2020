@@ -36,8 +36,8 @@ public class AocDay03 {
         int position = 0;
         for (int i = down; i < lines.size(); i += down) {
             position += right;
-            if (position > 30) {
-                position = position - 31;
+            if (position > lines.get(i).length() - 1) {
+                position = position - lines.get(i).length();
             }
 
             if (lines.get(i).charAt(position) == '#') {
